@@ -1,12 +1,25 @@
-name: 'Container Action Template'
-description: 'Get started with Container actions'
-author: 'GitHub'
+name: 'RabbitMQ Action with mng'
+description: 'Setup RabbitMQ Image with management options'
+author: 'jpcanoso'
 inputs: 
-  myInput:
-    description: 'Input to use'
-    default: 'world'
+  RABBITMQ_USER:
+    description: 'RabbitMQ Username'
+    default: 'guest'
+  RABBITMQ_PASS:
+    description: 'RabbitMQ Password'
+    default: 'guest'
+  RABBITMQ_PORT:
+    description: 'RabbitMQ Port'
+    default: 5672
+  RABBITMQ_MNG_PORT:
+    description: 'RabbitMQ Management Port'
+    default: 15672
+  RABBITMQ_TAG:
+    description: 'RabbitMQ Image Tag'
+    default: '3-alpine'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.myInput }}
+branding:
+  icon: 'database'
+  color: 'green'
