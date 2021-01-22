@@ -16,7 +16,7 @@ To be able to access the management API you should use a Docker Image tag with M
 ## Usage
 ```yaml
 steps:
-- uses: merteam/rabbitmq-mng-action/@v1.0
+- uses: mer-team/rabbitmq-mng-action/@v1.1
   with:
     RABBITMQ_USER: 'username'
     RABBITMQ_PASS: 'password'
