@@ -16,11 +16,11 @@ To be able to access the management API you should use a Docker Image tag with M
 ## Usage
 ```yaml
 steps:
-- uses: mer-team/rabbitmq-mng-action/@v1.1
+- uses: mer-team/rabbitmq-mng-action@v1.2
   with:
     RABBITMQ_USER: 'username'
     RABBITMQ_PASS: 'password'
     RABBITMQ_PORT: 5672
     RABBITMQ_MNG_PORT: 15672
-    RABBITMQ_TAG: '3management-alpine'
+    RABBITMQ_TAG: '3-management-alpine'
 ```
